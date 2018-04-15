@@ -1,5 +1,10 @@
  body {
-    position: relative; 
+    position: relative;
+    font-size: 2em 
+}
+
+nav li {
+	font-size: .75em
 }
 .mini-logo{
 	height: 25px;
@@ -13,19 +18,64 @@
 	padding: 60px 50px;
 	height:500px;
 	color: #fff; 
-	background-color: #1E88E5;
+	background: linear-gradient(0deg, rgba(2,173,231,0.5), rgba(2,173,231,0.5)), url("../images/appleCoding.jpg");
+	background-size:cover;
+    background-position:center;
+    background-color: #cccccc;
+}
+
+
+#section1 button {
+	margin-top: 60px;
 }
 #section2 {
 	padding: 60px 50px;
 	height:500px;
 	color: #fff; 
-	background-color: #673ab7;
+	background: linear-gradient(0deg, rgba(2,20,100,0.5), rgba(2,173,231,0.5)), url("../images/coding.jpg");
+	background-size:cover;
+    background-color: #cccccc;
 	text-align: right;
+}
+
+#section2 button {
+	margin-top: 60px;
 }
 #section3 {
 	padding: 60px 50px;
 	height:500px;
 	color: #fff;
-	background-color: #ff9800;
+	background: linear-gradient(0deg, rgba(2,20,100,0.5), rgba(2,173,231,0.5)), url("../images/blackboard.jpg");
+	background-size:cover;
+    background-color: #cccccc;
+    text-align: center;
+}
+#section3 button {
+	margin-top: 60px;
+}
+
+#contact-bar {
+	padding-left: 20px;
+	font-size: .35em
+}
+
+.profile-link {
+	style:none;
+}
+
+.btn {
+	text-decoration: none;
+}
+
+.about-header{
+	text-align: center;
+	font-size: 4em;
+	display: inline-block;
+	margin-top: 100px;
+
+}
+
+.about-text{
+	max-width: 90%;
 	text-align: center;
 }
