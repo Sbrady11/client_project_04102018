@@ -1,4 +1,4 @@
- body {
+body {
     position: relative;
     font-size: 2em 
 }
@@ -13,6 +13,16 @@ nav li {
 }
 .logo {
 	max-width: 100%;
+}
+
+.index-button{
+	text-decoration:none;
+	color:white;
+}
+
+.index-button:hover {
+	color:white;
+
 }
 #section1 {
 	padding: 60px 50px;
@@ -58,6 +68,12 @@ nav li {
 	padding-left: 20px;
 	font-size: .35em
 }
+#contact-bar-about{
+	padding-left: 20px;
+	padding-top: 30px;
+	font-size: .35em;
+	bottom:0;
+}
 
 .profile-link {
 	style:none;
@@ -69,13 +85,62 @@ nav li {
 
 .about-header{
 	text-align: center;
-	font-size: 4em;
-	display: inline-block;
-	margin-top: 100px;
+	font-size: 5em;
+	margin-top: 125px;
+	padding-bottom: 10px;
 
 }
 
-.about-text{
+.about-text {
 	max-width: 90%;
-	text-align: center;
+	padding-top: 50px;
+}
+
+.tech-image {
+	max-width: 100%;
+}
+.tech-image2 {
+	max-width: 120%
+}
+
+.about-end {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    .about-header {
+    	padding-left: 20px
+    }
+    .about-end {
+    	padding-right: 30px
+    }
+    .tech-image2 {
+        max-width: :80%;
+        padding-right: 40px;
+        padding-top:10px;
+    }
+    .about-text{
+    	padding-left: 50px;
+    	font-size: .5em;
+    	text-align: center;
+    }
+	.body {
+	font-size: .5em
+	}
+
+	.button-container {
+		padding-bottom: 60px;
+	}
+}
+
+}
+.container {
+	padding-left: 50px
+}
+
+@media only screen and (max-width:647px) {
+	body .container-index{
+		font-size: 1rem
+	}
 }
