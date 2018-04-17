@@ -95,7 +95,6 @@ nav li {
 }
 
 .about-text {
-	max-width: 90%;
 	padding-top: 20px;
 }
 
@@ -116,15 +115,12 @@ nav li {
 .about-button{
 	text-decoration:none;
 	color:white;
-	margin-bottom: 200px;
+	margin-bottom: 150px;
 }
 
 
 
 @media only screen and (max-width: 768px){
-    .about-header {
-    	padding-left: 20px
-    }
     .about-end {
     	padding-right: 30px
     }
@@ -133,7 +129,6 @@ nav li {
         padding-top: 10px;
     }
     .about-text{
-    	padding-left: 50px;
     	font-size: .5em;
     	text-align: center;
     }
@@ -168,6 +163,10 @@ nav li {
 	padding-bottom: 10px;
 	max-width: 750px;
 
+}
+
+.services-blurb {
+	max-width: 670px;
 }
 
 .service-icon {
@@ -213,6 +212,11 @@ nav li {
 .contact-container{
 	background-color: white;
 	border-radius: 25px;
+	margin-top: 180px;
 	margin-bottom: 100%;
 	max-width: 750px;
+}
+
+.card-info{
+	font-size: .75em
 }
