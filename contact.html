@@ -69,7 +69,7 @@
 	 			</div>
 	 		</div>
 				<div class="contact-content">
-					<div class="row">
+					<div class="row slideanim">
 						<div class="offset-md-1 col-sm-4 text-center contact-text"><img class="contact-logo" src="images/contact logo.png" alt="contact logo" />
 						</div>
 						<div class="col-sm-4 offset-1">
@@ -97,4 +97,16 @@
 	</div>
 	</div>
 </body>
+<script>
+  $(window).scroll(function() {
+  $(".slideanim").each(function(){
+    var pos = $(this).offset().top;
+
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
+</script>
 </html>
