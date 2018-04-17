@@ -183,6 +183,7 @@ nav li {
 
 .contact-header {
 	margin-top: 100px;
+	padding-top: 50px;
 
 }
 
@@ -219,4 +220,8 @@ nav li {
 
 .card-info{
 	font-size: .75em
+}
+
+.contact-logo {
+	max-width: 100%; 
 }
