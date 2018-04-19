@@ -34,31 +34,31 @@
     <meta name="theme-color" content="#ffffff">
   </head>
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body id="#" data-spy="scroll" data-target=".navbar" data-offset="60">
 
    <!--  navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
-      <a class="navbar-brand" href="#"><img class="mini-logo" src="images/logo-mini.png" alt="mini aiAmi logo" /></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav justify-content-center d-flex flex-fill">
-          <div class="d-flex flex-fill"><!--spacer--> </div>
-          <li class="nav-item active">
-            <a class="nav-link" href="#section1">About Us<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section2">Solutions</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section3">Contact</a>
-          </li>
-          </li>
-        </ul>
-      <div class="d-flex flex-fill"><!--spacer--> </div>
-      </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <a class="navbar-brand" href="#"><img class="mini-logo" src="images/logo-mini.png" alt="mini aiAmi logo" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav justify-content-center d-flex flex-fill">
+        <div class="d-flex flex-fill"><!--spacer--> </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#section1">About Us<span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section2">Solutions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section3">Contact</a>
+        </li>
+        </li>
+      </ul>
+    <div class="d-flex flex-fill"><!--spacer--> </div>
+    </div>
+  </nav>
   <!-- navbar end here -->
  <div class="index-background">
   <!-- logo -->
@@ -74,47 +74,110 @@
         <p>Innovators, problem solvers, your partner for all your technology solutions </p>
       <button type="button" class="btn btn-danger btn-lg"><a class="nav-link index-button" href="about.html">Find Out More</a></button>
     </div>
-  <div id="section2" class="container-fluid">
+    <div id="section2" class="container-fluid">
       <h1>Software Solutions</h1>
         <p>At itAmi, we provide a range of services and software solutions to help keep your company modern, and running.  </p>
       <button type="button" class="btn btn-danger btn-lg"><a class="nav-link index-button" href="solutions.html">Find Out More</a></button>
+    </div>
+    <div id="section3" class="container-fluid">
+      <h1>Start The Conversation</h1>
+      <button type="button" class="btn btn-danger btn-lg"><a class="nav-link index-button" href="contact.html">Let's Work Together</a></button></div>
   </div>
-  <div id="section3" class="container-fluid">
-    <h1>Contact</h1>
-    <button type="button" class="btn btn-danger btn-lg"><a class="nav-link index-button" href="contact.html">Let's Work Together</a></button></div>
-  <div id="contact-bar">
-    <p>©itAmi Software Solutions 2018. All Rights Reserved. Website by <a class="profile-link"href="https://www.linkedin.com/in/simon-brady11/" class="nav-link" style="letter-spacing: 0px;">Simon Brady</a></p>
-  </div>
+
+  <!-- footer -->
+  <footer class="container-fluid">
+    <br>
+    <div class="row">
+      <div class="offset-1 col-md-4">
+        1 (732) 824 3281 
+        <div class="row">
+          <div class="col-md-4">
+            <p><a href="mailto: itami.solutions@gmail.com">  itami.solutions@gmail.com</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            270 Baldwin Rd, Parsippany, New Jersey 07054, United States
+          </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-1">
+              <a href="https://www.linkedin.com/company/itami-software-solutions/" alt="linkedIn link"><img class="footer-logo" src=images/png/linkedIn.png alt="linkedIn Link Logo" /></a>
+            </div>
+            <div class="offset-md-1 col-md-3">
+              <a href="https://www.facebook.com/itAmiSoftwareSolutions/" alt="facebook link"><img class="footer-logo" src=images/png/facebook.png alt="facebook Link Logo" /></a>
+            </div>
+        </div>
+      </div>
+      <br>
+      <hr>
+      <div class="offset-md-2 col-md-4">
+        <div id="googleMap" style="width:100%;height:400px;">
+        </div>
+      </div>
+    </div>
+      <script>
+        function myMap() {
+        var myCenter = new google.maps.LatLng(40.867817, -74.396815);
+        var mapProp= {
+            center:myCenter,
+            zoom:17,
+        };
+        var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        var marker = new google.maps.Marker(
+          {position:myCenter,
+            title: "270 Baldwin Rd, Parsippany, New Jersey 07054, United States"
+          });
+        marker.setMap(map);
+        }
+      </script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkrpyrvITaOV6VgwVVNHiakGTMLfOisBs&callback=myMap">
+      </script>
+    <div class="footer-end">
+    <hr>
+      <div class="row">
+        <div class="offset-1 col-md-2">
+          ©itAmi Software Solutions 2018. All Rights Reserved. 
+        </div>
+      </div>
+      <div class="row">
+        <div class="offset-1 col-md-4">
+          <a class="profile-link" href="https://www.linkedin.com/in/simon-brady11/">Simon Brady Designs</a></p> 
+        </div>
+      </div> 
+    </div> 
+  </footer>
 </div>
 </div>
 </body>
 
 <!-- smooth scrolling functionality -->
-  <script>
-  $(document).ready(function(){
-    // Add smooth scrolling to all links in navbar + footer link
-    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
 
-     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
 
-      // Prevent default anchor click behavior
-      event.preventDefault();
+    // Prevent default anchor click behavior
+    event.preventDefault();
 
-      // Store hash
-      var hash = this.hash;
+    // Store hash
+    var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 500, function(){
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 500, function(){
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-        });
-      } // End if
-    });
-  })
-  </script>
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
 </html>
