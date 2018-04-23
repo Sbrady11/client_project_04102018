@@ -59,6 +59,57 @@
     </nav>
   <!-- navbar end here -->
 <div class="solutions-background">
+  <div id="section2" class="container-fluid">
+    <br>
+    <div class="row">
+      <div class="col-12 text-center">
+        <div id="wrapper">
+            <div id="typewriter">
+                <span class="tag">How Can We Help</span>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script>
+        function animate(elements, callback) {
+        var i = 0;
+        (function iterate() {
+            if (i < elements.length) {
+                elements[i].style.display = "block"; 
+                animateNode(elements[i], iterate); 
+                i++;
+            } else
+                callback();
+        })();
+        function animateNode(element, callback) {
+            var pieces = [];
+            if (element.nodeType==1) {
+                while (element.hasChildNodes())
+                    pieces.push(element.removeChild(element.firstChild));
+                setTimeout(function childStep() {
+                    if (pieces.length) {
+                        animateNode(pieces[0], childStep); 
+                        element.appendChild(pieces.shift());
+                    } else
+                        callback();
+                }, 10000/100);
+            } else if (element.nodeType==3) {
+                pieces = element.data.match(/.{0,1}/g); 
+                element.data = "";
+                (function addText(){
+                    element.data += pieces.shift();
+                    setTimeout(pieces.length
+                        ? addText
+                        : callback,
+                      10000/100);
+                })();
+            }
+        }
+    }
+
+    animate($("#typewriter").children());
+    </script>
+    </div>
   <div class="container-fluid text-center services-container">
   <div class="services-header">
     <h1>Software Solutions</h1>
@@ -99,6 +150,7 @@
   <br>
     <div class="container-fluid text-center services-blurb">
     <p>At itAmi, we are dedicated to providing our clients with cutting edge software solutions for their business needs. From Database Design, to Machine Learning and AI supported analyses, itAmi can help keep your business modern, efficient, and on target.</p>
+    <br>
     <hr>
   </div>
   </div>
