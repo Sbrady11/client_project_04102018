@@ -15,7 +15,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
-    <title>itAmi Software Solutions</title>
+    <title>itAmi Software Solutions Contact</title>
 <!-- favicon code -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -96,6 +96,36 @@
 		</div>
 		</div>
 	</div>
+  <form id="my_form" onsubmit="submitForm(); return false;">
+    <p><input id="n" placeholder="Name" required></p>
+    <p><input id="e" placeholder="Email Address" type="email" required></p>
+    <textarea id="m" placeholder="write your message here" rows="10" required></textarea>
+    <p><input id="mybtn" type="submit" value="Submit Form"> <span id="status"></span></p>
+  </form>
+    <script>
+      function _(id){ return document.getElementById(id); }
+      function submitForm(){
+        _("mybtn").disabled = true;
+        _("status").innerHTML = 'please wait ...';
+        var formdata = new FormData();
+        formdata.append( "n", _("n").value );
+        formdata.append( "e", _("e").value );
+        formdata.append( "m", _("m").value );
+        var ajax = new XMLHttpRequest();
+        ajax.open( "POST", "example_parser.php" );
+        ajax.onreadystatechange = function() {
+          if(ajax.readyState == 4 && ajax.status == 200) {
+            if(ajax.responseText == "success"){
+              _("my_form").innerHTML = '<h2>Thanks '+_("n").value+', your message has been sent.</h2>';
+            } else {
+              _("status").innerHTML = ajax.responseText;
+              _("mybtn").disabled = false;
+            }
+          }
+        }
+        ajax.send( formdata );
+      }
+    </script>
 	</div>
     <!-- footer -->
   <footer class="container-fluid">
