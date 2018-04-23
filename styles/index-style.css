@@ -303,6 +303,9 @@ nav li {
 	.tag {
 	font-size: 2em;
 	padding-top: 90px;
+	}
 }
 
+.card {
+	font-size: .7em
 }

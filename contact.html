@@ -23,6 +23,7 @@
         var formdata = new FormData();
         formdata.append( "n", _("n").value );
         formdata.append( "e", _("e").value );
+        formdata.append( "s", _("s").value );
         formdata.append( "m", _("m").value );
         var ajax = new XMLHttpRequest();
         ajax.open( "POST", "example_parser.php" );
@@ -160,23 +161,30 @@
 					<h4>We're available to start solving your software problems today</h4>
 					<br>
 	  				<h5>1 (732) 824 3281 </h5>
+             <p><a href="mailto: itami.solutions@gmail.com">itami.solutions@gmail.com</a></p>
+          </div>
 	  			</div>
+          <br>
+          <hr>
 	  		</div>
+        <div class="row text-center">
+          <h4>Feel free to send an inquiry regarding our services, and we'll contact you as soon as we can.</h4>
+        </div>
+        <br>
 	  		<div class="row text-center">
-        <div class="col-md-4">
+        <div class="col-md-6 offset-md-3">
           <div class="form-container">
             <form id="my_form" onsubmit="submitForm(); return false;">
               <p><input id="n" placeholder="Name" required></p>
               <p><input id="e" placeholder="Email Address" type="email" required></p>
-              <textarea id="m" placeholder="write your message here" rows="10" required></textarea>
-              <p><input id="mybtn" type="submit" value="Send"> <span id="status"></span></p>
+              <p><input id="s" placeholder="Inquiry Subject" type="text" required></p>
+              <p><textarea id="m" placeholder="Your message here" rows="6" required></textarea></p>
+              <p><input id="mybtn" type="submit" value="Send"><span id="status"></span></p>
+            <br>
+            <br>
             </form>
           </div>
-	  		</div>
-          <div class="col-sm-12 col-md-4 offset-md-2">
-            <p><a href="mailto: itami.solutions@gmail.com">  itami.solutions@gmail.com</a></p>
-          </div>
-      </div>
+        </div>
         <hr>
         <br>
     </div>
