@@ -285,7 +285,16 @@ nav li {
 	line-height: 1.15;
 	margin: 1em;
 } 
-.tag {
+
+.tag-about{
+	font-size: 3em;
+}
+
+.tag-solutions{
+	font-size: 3em;
+}
+
+.tag-contact{
 	font-size: 3em;
 }
 
@@ -300,12 +309,27 @@ nav li {
 }
 
 @media only screen and (max-width: 619px) { 
-	.tag {
+.tag-about{
 	font-size: 2em;
-	padding-top: 90px;
+	padding-top: 60px;
+}
+
+.tag-solutions{
+	font-size: 2em;
+}
+
+.tag-contact{
+	font-size: 2em;
 	}
 }
 
 .card {
 	font-size: .7em
+}
+
+@media only screen and (max-width: 375px) {
+	.tag-solutions{
+		font-size: 1.3em;
+		padding-top: 90px;
+	}
 }
