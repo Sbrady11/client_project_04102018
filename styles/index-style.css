@@ -2,11 +2,7 @@ body {
     position: relative;
     height: 100%;
     font-size: 2em;
-    background: #fd297b; /* Old browsers */
-	background: -moz-linear-gradient(top, #fd297b 3%, #f6290c 53%, #ff655b 100%) no-repeat;; /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #fd297b 3%,#f6290c 53%,#ff655b 100%) no-repeat;; /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #fd297b 3%,#f6290c 53%,#ff655b 100%) no-repeat;; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fd297b', endColorstr='#ff655b',GradientType=0 ) no-repeat;; /* IE6-9 */
+    background: #dc3545; /* Old browsers */
 }
 
 footer {
