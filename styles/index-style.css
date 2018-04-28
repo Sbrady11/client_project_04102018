@@ -25,6 +25,11 @@ nav li {
 	max-width: 100%;
 }
 
+.sm-logo {
+	height: 150px;
+	width: 150px;
+}
+
 .index-button{
 	text-decoration:none;
 	color:white;
