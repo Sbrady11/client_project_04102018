@@ -196,6 +196,27 @@ nav li {
 	margin-bottom: 2em;
 }
 
+.service-icon-custom {
+	max-width: 360px;
+	margin-bottom: 2em;
+}
+
+.service-icon-custom-prudential {
+	padding-top: 15px;
+}
+
+@media only screen and (max-width: 991px){
+	.service-icon-custom {
+		max-width: 200px;
+		margin-bottom: 2em;
+	}
+	.service-icon-custom-prudential {
+	padding-top: 15px;
+			max-width: 200px;
+		margin-bottom: 2em;
+		}
+}
+
 .service-section {
 	padding: 20px;
 }

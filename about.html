@@ -32,7 +32,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-  </head>
+</head>
  <body>
    <!--  navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
@@ -59,58 +59,58 @@
     </nav>
   <!-- navbar end here -->
   <div class="about-background">
-	<div id="section1" class="container-fluid">
+  	<div id="section1" class="container-fluid">
 		<br>
-		<div class="row">
-			<div class="col-12 text-center">
-				<div id="wrapper">
-			   		<div id="typewriter">
-			      		<span class="tag-about">About Us</span>
-			    	</div>
-				</div>
-			</div>
-		</div>
-		<script>
-		    function animate(elements, callback) {
-		    var i = 0;
-		    (function iterate() {
-		        if (i < elements.length) {
-		            elements[i].style.display = "block"; 
-		            animateNode(elements[i], iterate); 
-		            i++;
-		        } else
-		            callback();
-		    })();
-		    function animateNode(element, callback) {
-		        var pieces = [];
-		        if (element.nodeType==1) {
-		            while (element.hasChildNodes())
-		                pieces.push(element.removeChild(element.firstChild));
-		            setTimeout(function childStep() {
-		                if (pieces.length) {
-		                    animateNode(pieces[0], childStep); 
-		                    element.appendChild(pieces.shift());
-		                } else
-		                    callback();
-		            }, 10000/100);
-		        } else if (element.nodeType==3) {
-		            pieces = element.data.match(/.{0,1}/g); 
-		            element.data = "";
-		            (function addText(){
-		                element.data += pieces.shift();
-		                setTimeout(pieces.length
-		                    ? addText
-		                    : callback,
-		                  10000/100);
-		            })();
-		        }
-		    }
-		}
+  		<div class="row">
+  			<div class="col-12 text-center">
+  				<div id="wrapper">
+  			   		<div id="typewriter">
+  			      		<span class="tag-about">About Us</span>
+  			    	</div>
+  				</div>
+  			</div>
+  		</div>
+  		<script>
+  		    function animate(elements, callback) {
+  		    var i = 0;
+  		    (function iterate() {
+  		        if (i < elements.length) {
+  		            elements[i].style.display = "block"; 
+  		            animateNode(elements[i], iterate); 
+  		            i++;
+  		        } else
+  		            callback();
+  		    })();
+  		    function animateNode(element, callback) {
+  		        var pieces = [];
+  		        if (element.nodeType==1) {
+  		            while (element.hasChildNodes())
+  		                pieces.push(element.removeChild(element.firstChild));
+  		            setTimeout(function childStep() {
+  		                if (pieces.length) {
+  		                    animateNode(pieces[0], childStep); 
+  		                    element.appendChild(pieces.shift());
+  		                } else
+  		                    callback();
+  		            }, 10000/100);
+  		        } else if (element.nodeType==3) {
+  		            pieces = element.data.match(/.{0,1}/g); 
+  		            element.data = "";
+  		            (function addText(){
+  		                element.data += pieces.shift();
+  		                setTimeout(pieces.length
+  		                    ? addText
+  		                    : callback,
+  		                  10000/100);
+  		            })();
+  		        }
+  		    }
+  		}
 
-		animate($("#typewriter").children());
-		</script>
-</div>
+  		animate($("#typewriter").children());
+  		</script>
     </div>
+  </div>
 	<div class="container about-container">
 	    <div class="row about-header">
 	        <div class="col-12 about-header">
@@ -149,23 +149,23 @@
       <br>
   
       <div class="row">
-        <div class="offset-3 offset-md-1 col-12 col-md-3">
-          <img class="service-icon" src="images/Prudential.svg" alt="Prudential logo" />
+        <div class="col-md-4">
+          <p class="card-info text-center text-center"><img class="service-icon-custom-prudential" src="images/Prudential.svg" alt="Prudential logo" /></p>
         </div>
-        <div class="offset-3 offset-md-1 col-12 col-md-3">
-          <img class="service-icon" src="images/Citi.svg" alt="Citi bank logo" />
+        <div class="col-md-4">
+          <p class="card-info text-center"><img class="service-icon" src="images/Citi.svg" alt="Citi bank logo" /></p>
         </div>
-        <div class="offset-3 offset-md-1 col-12 col-md-3">
-          <img class="service-icon" src="images/New_York_Life.svg" alt="New York Life logo" />
+        <div class="col-md-4">
+          <p class="card-info text-center"><img class="service-icon" src="images/New_York_Life.svg" alt="New York Life logo" /></p>
         </div>
       </div>
       <br>
       <div class="row">
-        <div class="offset-3 offset-md-3 col-12 col-md-3">
-          <img class="service-icon" src="images/BoA.jpg" alt="Prudential logo" />
+        <div class="col-12 col-md-6">
+         <p class="card-info text-center"> <img class="service-icon-custom" src="images/BoA.jpg" alt="Prudential logo" /></p>
         </div>
-        <div class="offset-3 offset-md-1 col-12 col-md-3">
-          <img class="service-icon" src="images/revantage.png" alt="revantage logo" />
+        <div class="col-12 col-md-6">
+          <p class="card-info text-center"><img class="service-icon-custom" src="images/revantage.png" alt="revantage logo" /></p>
         </div>
       </div>
 	    <br>
@@ -185,7 +185,7 @@
 	</div>
 </div>
   <!-- footer -->
-    <footer class="container-fluid">
+   <footer class="container-fluid">
     <br>
     <div class="row">
       <div class="offset-1 col-md-4">
