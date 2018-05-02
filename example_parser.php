@@ -18,3 +18,22 @@ if( isset($_POST['n']) && isset($_POST['e']) && isset($_POST['m']) ){
 	}
 }
 ?>
+
+<?
+$now = date("D M j G:i:s T Y");
+$toAddress = $_GET['to'];
+$from = $_GET['to'];
+$fromAddress = "From: $from\r\n" .
+   "Reply-To: webmaster@" . $_SERVER['SERVER_NAME'] . "\r\n" .
+   "X-Mailer: PHP/" . phpversion();
+
+
+if ($toAddress <> ""){
+
+	for ($i = 1; $i <= $emailCount; $i++) {
+		$body = "Message from $now";
+		mail($toAddress, "Test email number $i", $body, $fromAddress);
+		echo "email sent!<br>";
+		}
+}
+?>

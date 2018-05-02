@@ -151,12 +151,8 @@ nav li {
         padding-top: 10px;
     }
     .about-text{
-    	font-size: .5em;
-    	text-align: center;
+       	text-align: center;
     }
-	.body {
-	font-size: .5em
-	}
 
 	.button-container {
 		padding-bottom: 60px;
@@ -192,7 +188,7 @@ nav li {
 }
 
 .service-icon {
-	max-width: 136.66px;
+	max-width: 100px;
 	margin-bottom: 2em;
 }
 
